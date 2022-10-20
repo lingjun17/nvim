@@ -46,7 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   -- Nvim-tree
-  -- use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
 
   -- Coc 
   use {'neoclide/coc.nvim', branch = 'release'}
@@ -69,9 +70,21 @@ return packer.startup(function(use)
     requires = {{ 'nvim-lua/plenary.nvim' }}
   } 
   use 'nvim-telescope/telescope-media-files.nvim'
+  use 'BurntSushi/ripgrep'
+  use 'sharkdp/fd'
+
+  -- git
+  use 'lewis6991/gitsigns.nvim'
+
+  -- terminator
+  use "akinsho/toggleterm.nvim"
+
+  -- comment
+  use "numToStr/Comment.nvim"
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   
   -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
+  -- Put this a the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

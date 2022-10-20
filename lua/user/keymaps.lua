@@ -26,7 +26,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Lexplorer 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts) -- Lex is short for Lexplorer
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts) -- Lex is short for Lexplorer
+
+-- Nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts) -- Lex is short for Lexplorer
 
 -- TODO: Resize with arrows
 keymap("n", "<leader><C-Up>", ":resize +2<CR>", opts)
@@ -61,8 +64,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 

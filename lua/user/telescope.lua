@@ -6,13 +6,25 @@ end
 telescope.load_extension('media_files')
 
 local actions = require "telescope.actions"
+local telescopeConfig = require("telescope.config")
+
+-- Clone the default Telescope configuration
+local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
+
+-- I want to search in hidden/dot files.
+table.insert(vimgrep_arguments, "--hidden")
+-- I don't want to search in the `.git` directory.
+table.insert(vimgrep_arguments, "--glob")
+table.insert(vimgrep_arguments, "!.git/*")
 
 telescope.setup {
   defaults = {
 
-    prompt_prefix = ">",
-    selection_caret = ">",
+    prompt_prefix = "",
+    selection_caret = " ",
     path_display = { "smart" },
+
+    vimgrep_arguments = vimgrep_arguments,
 
     mappings = {
       i = {
@@ -79,15 +91,14 @@ telescope.setup {
       },
     },
   },
-  -- pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
-  -- },
+  
+  pickers = {
+		find_files = {
+			-- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+			find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
+		},
+	},
+ 
   extensions = {
     media_files = {
         -- filetypes whitelist

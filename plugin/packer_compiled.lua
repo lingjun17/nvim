@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -84,10 +89,35 @@ _G.packer_plugins = {
     path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/lunarvim/darkplus.nvim"
   },
+  fd = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/fd",
+    url = "https://github.com/sharkdp/fd"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedarker.nvim"] = {
     loaded = true,
@@ -108,6 +138,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
+  },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
+    url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/jeremy/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
