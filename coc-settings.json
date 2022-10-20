@@ -1,0 +1,7 @@
+{
+  "clangd.disableCompletion": false,
+  "clangd.disableDiagnostics": true,
+  "clangd.enabled": true,
+  "clangd.compilationDatabasePath": " ",
+  "clangd.compilationDatabaseCandidates": ["${workspaceFolder}"]
+}
