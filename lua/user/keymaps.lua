@@ -38,8 +38,8 @@ keymap("n", "<leader><C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<leader><C-Right>", ":vertical resize -2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<C-[>", ":bprevious<CR>", opts)
-keymap("n", "<C-]>", ":bnext<CR>", opts)
+keymap("n", "<C-=>", ":bprevious<CR>", opts)
+keymap("n", "<C-+>", ":bnext<CR>", opts)
 
 
 -- Visual --
