@@ -10,8 +10,15 @@
 sudo apt-get install fd-find
 sudo apt-get install ripgrep
 ```
-1. NerdFont: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
+6. NerdFont: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
 ```
 fc-cache -f -v0
 fc-list | grep "Hack"
 ```
+
+## TODO
+Telescope extension to accelerate the index https://github.com/nvim-telescope/telescope-fzf-native.nvim
+
+## Resources
+https://www.bilibili.com/video/BV1QL4y147VD?p=1&vd_source=fcef647ca87eef400020c837ba3ef80b
+https://juejin.cn/book/7051157342770954277/section/7051399376945545252
