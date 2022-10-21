@@ -16,6 +16,9 @@ fc-cache -f -v0
 fc-list | grep "Hack"
 ```
 
+## Remember
+The clipboard is not work if you enabled the preference->profile->terminal->enable mouse reporting in ITEMS2
+
 ## TODO
 Telescope extension to accelerate the index https://github.com/nvim-telescope/telescope-fzf-native.nvim
 
