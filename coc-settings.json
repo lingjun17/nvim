@@ -3,5 +3,7 @@
   "clangd.disableDiagnostics": true,
   "clangd.enabled": true,
   "clangd.compilationDatabasePath": " ",
-  "clangd.compilationDatabaseCandidates": ["${workspaceFolder}"]
+  "clangd.compilationDatabaseCandidates": ["${workspaceFolder}"],
+  "suggest.enablePreselect": false,
+  "suggest.noselect": true
 }

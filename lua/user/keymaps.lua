@@ -38,9 +38,16 @@ keymap("n", "<leader><C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<leader><C-Right>", ":vertical resize -2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<C-=>", ":bprevious<CR>", opts)
-keymap("n", "<C-+>", ":bnext<CR>", opts)
+-- keymap("n", "<A-h>", ":bprevious<CR>", opts)
+-- keymap("n", "<A-l>", ":bnext<CR>", opts)
 
+-- switch tab keymap
+keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)
+keymap("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
+-- close tab "moll/vim-bbye"
+keymap("n", "<leader>bb", ":Bdelete!<CR>", opts)
+keymap("n", "<leader>br", ":BufferLineCloseRight<CR>", opts)
+keymap("n", "<leader>bl", ":BufferLineCloseLeft<CR>", opts)
 
 -- Visual --
 -- Stay in indent mode 
@@ -49,13 +56,13 @@ keymap("v", ">", ">gv", opts)
 
 
 -- Move text up and down
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
+keymap("v", "<S-k>", ":m .-2<CR>==", opts)
+keymap("v", "<S-j>", ":m .+1<CR>==", opts)
 
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "<S-j>", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "<S-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
 -- Better terminal navigation

@@ -47,11 +47,12 @@ return packer.startup(function(use)
 
   -- Nvim-tree
   use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
-
+  use {
+    "kyazdani42/nvim-tree.lua", 
+    requires = "kyazdani42/nvim-web-devicons"
+  }
   -- Coc 
   use {'neoclide/coc.nvim', branch = 'release'}
-
 
   -- colorschemes
   use 'folke/tokyonight.nvim'
@@ -84,7 +85,17 @@ return packer.startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- nvim-autopairs
-  use("windwp/nvim-autopairs")
+  use "windwp/nvim-autopairs"
+
+  -- bufferline, tab implement 
+  use { 
+    "akinsho/bufferline.nvim", 
+    requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }
+  }
+
+  -- lualine, the bottomline optimize
+  use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+  use("arkav/lualine-lsp-progress")
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this a the end after all plugins
