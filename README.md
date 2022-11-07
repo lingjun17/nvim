@@ -120,6 +120,8 @@ vim.opt.clipboard = "unnamedplus"
 <S-h/k>  tab页左右移动
 <Leader-bb> 关闭tab页
 <Leader-e> 打开/关闭NvimTree
+<Leader-f> 搜索文件
+<Leader-shift-f> 搜索内容
 gd 跳转定义，也可用于跳转头文件
 gr 跳转引用
 <C-\> 打开/关闭termator
