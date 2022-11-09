@@ -113,3 +113,17 @@ vim.o.showmode = false
 -- 配置剪切板
 vim.opt.clipboard = "unnamedplus"
 ```
+
+## Keymap
+```
+<C-h/j/k/l> 窗口左上下右移动
+<S-h/k>  tab页左右移动
+<Leader-bb> 关闭tab页
+<Leader-e> 打开/关闭NvimTree
+<Leader-f> 搜索文件
+<Leader-shift-f> 搜索内容
+gd 跳转定义，也可用于跳转头文件
+gr 跳转引用
+<C-\> 打开/关闭termator
+其他的都和vim常用快捷键一样
+```
