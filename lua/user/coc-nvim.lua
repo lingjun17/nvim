@@ -81,8 +81,8 @@ vim.api.nvim_create_autocmd("CursorHold", {
 })
 
 
--- Symbol renaming.
-keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
+-- Symbol renaming. conflict with telescope's most recent used files. <leader>r 
+-- keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
 
 
 -- Formatting selected code.
