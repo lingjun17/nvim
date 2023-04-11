@@ -14,6 +14,13 @@ lualine.setup{
   },
   extensions = { "nvim-tree", "toggleterm" },
   sections = {
+    lualine_a = {
+      {
+        'filename',
+        file_status = true,
+        path = 1
+      }
+    },
     lualine_c = {
       "filename",
       {

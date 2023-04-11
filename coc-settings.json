@@ -22,5 +22,6 @@
   ],
   "inlayHint.enable": false, 
   "suggest.enablePreselect": false,
-  "suggest.noselect": true
+  "suggest.noselect": true,
+  "snippets.ultisnips.pythonPrompt": false
 }
