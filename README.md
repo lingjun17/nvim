@@ -21,6 +21,8 @@ The clipboard is not work if you enabled the preference->profile->terminal->enab
 
 ## TODO
 Telescope extension to accelerate the index https://github.com/nvim-telescope/telescope-fzf-native.nvim
+Support window resize 
+Support golang and python
 
 ## Resources
 https://www.bilibili.com/video/BV1QL4y147VD?p=1&vd_source=fcef647ca87eef400020c837ba3ef80b
