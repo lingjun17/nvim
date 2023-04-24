@@ -19,13 +19,17 @@ function _G.check_back_space()
 end
 
 vim.g.coc_global_extensions = {
+  "coc-go",
+  "coc-python",
   "coc-clangd", 
   "coc-cmake", 
   "coc-explorer",
   "coc-git",
   "coc-json",
   "coc-snippets",
-  "coc-xml"
+  "coc-xml",
+  "coc-marketplace",
+  "coc-diagnostic"
 }
 
 -- Use tab for trigger completion with characters ahead and navigate.

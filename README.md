@@ -20,9 +20,8 @@ fc-list | grep "Hack"
 The clipboard is not work if you enabled the preference->profile->terminal->enable mouse reporting in ITEMS2
 
 ## TODO
-Telescope extension to accelerate the index https://github.com/nvim-telescope/telescope-fzf-native.nvim
-Support window resize 
-Support golang and python
+1. Telescope extension to accelerate the index https://github.com/nvim-telescope/telescope-fzf-native.nvim
+1. Support Python
 
 ## Resources
 https://www.bilibili.com/video/BV1QL4y147VD?p=1&vd_source=fcef647ca87eef400020c837ba3ef80b
@@ -128,4 +127,6 @@ gd 跳转定义，也可用于跳转头文件
 gr 跳转引用
 <C-\> 打开/关闭termator
 其他的都和vim常用快捷键一样
+Telescope i-><C-q> jump quick fix mode
+<Leader><Up>/<Down>/<Left>/<Right> resize windows
 ```

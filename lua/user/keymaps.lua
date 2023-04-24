@@ -31,11 +31,11 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts) -- Lex is short for Lexplorer
 
--- TODO: Resize with arrows
--- keymap("n", "<leader>h+", ":resize +2<CR>", opts)
--- keymap("n", "<leader>h-", ":resize -2<CR>", opts)
--- keymap("n", "<leader>v+", ":vertical resize +2<CR>", opts)
--- keymap("n", "<leader>v-", ":vertical resize -2<CR>", opts)
+-- Resize with arrows
+keymap("n", "<leader><Up>", ":resize +1<CR>", opts)
+keymap("n", "<leader><Down>", ":resize -1<CR>", opts)
+keymap("n", "<leader><Left>", ":vertical resize +1<CR>", opts)
+keymap("n", "<leader><Right>", ":vertical resize -1<CR>", opts)
 
 -- Navigate buffers
 -- keymap("n", "<A-h>", ":bprevious<CR>", opts)

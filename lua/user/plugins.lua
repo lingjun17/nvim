@@ -96,6 +96,27 @@ return packer.startup(function(use)
   -- lualine, the bottomline optimize
   use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
   use("arkav/lualine-lsp-progress")
+
+  use {
+    'gelguy/wilder.nvim',
+    config = function()
+      -- config goes here
+      local wilder = require('wilder')
+      wilder.setup({modes = {':', '/', '?'}})
+      wilder.set_option('renderer', wilder.popupmenu_renderer(
+        wilder.popupmenu_border_theme({
+          highlights = {
+            border = 'Normal', -- highlight to use for the border
+          },
+          -- 'single', 'double', 'rounded' or 'solid'
+          -- can also be a list of 8 characters, see :h wilder#popupmenu_border_theme() for more details
+          border = 'rounded',
+        })
+      ))
+    end
+  }
+
+  use 'fatih/vim-go'
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this a the end after all plugins
